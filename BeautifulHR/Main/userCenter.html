@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HR我最美</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/userCenter.css">
+</head>
+<body>
+<div class="main">
+    <div class="wrapper">
+        <div class="banner"></div>
+        <div class="content">
+            <div class="inner">
+                <img src="img/rankList/fake-portrait.jpg" alt="">
+                <div class="title">
+                    <div class="username">张三</div>
+                    <div class="count">
+                        <span class="flower"></span>
+                        <div class="number">X123</div>
+                    </div>
+                </div>
+                <div class="declaration">
+                    <p>一二三四五六七八九十一二三四五六七八九十一二三四五</p>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="vote-btn" id="voteBtn"></a>
+    </div>
+    <div class="question" id="question">
+        <div class="close-btn" id="closeQuestionBtn"></div>
+        <div class="question-banner">
+            <div class="outer">
+                <div class="inner">
+                    <div class="question-title">答对累计3票，答错累计1票，请作答：</div>
+                    <div class="question-content">
+                        <p>以下哪些不是Java架构:</p>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="itemA">J2EE
+                                <label for="itemA">
+                                    <span class="redPot"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="itemB">Spring
+                                <label for="itemB">
+                                    <span class="redPot"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="itemC">Framework
+                                <label for="itemC">
+                                    <span class="redPot"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="itemD">Linux
+                                <label for="itemD">
+                                    <span class="redPot"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="itemE">PHP
+                                <label for="itemE">
+                                    <span class="redPot"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="submit-btn"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="answer answer-right-followed">
+        <div class="close-btn"></div>
+        <div class="answer-banner">
+            <div class="outer">
+                <div class="inner">
+                    <div class="answer-title">回答正确！</div>
+                    <div class="tips">您已成功为选手张三投上3票，</div>
+                    <div class="tips">1小时后您还可以继续投票</div>
+                    <div class="tips">累计投票赢得精美大奖，快快行动吧！</div>
+                    <div class="award">
+                        <img src="img/userCenter/award.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="answer answer-right-unFollowed">
+        <div class="close-btn"></div>
+        <div class="answer-banner">
+            <div class="outer">
+                <div class="inner">
+                    <div class="answer-title">回答正确！</div>
+                    <div class="tips">长按关注下方二维码，才可为该</div>
+                    <div class="tips">HR投上3票，1小时后您还可以继续投票</div>
+                    <div class="qrcode">
+                        <img src="img/userCenter/qrcode.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="answer answer-wrong-followed">
+        <div class="close-btn"></div>
+        <div class="answer-banner">
+            <div class="outer">
+                <div class="inner">
+                    <div class="answer-title">回答错误！</div>
+                    <div class="tips">您已成功为选手张三投上1票，</div>
+                    <div class="tips">1小时后您还可以继续投票</div>
+                    <div class="tips">累计投票赢得精美大奖，快快行动吧！</div>
+                    <div class="award">
+                        <img src="img/userCenter/award.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="answer answer-wrong-unFollowed">
+        <div class="close-btn"></div>
+        <div class="answer-banner">
+            <div class="outer">
+                <div class="inner">
+                    <div class="answer-title">回答错误！</div>
+                    <div class="tips">长按关注下方二维码，才可为该</div>
+                    <div class="tips">HR投上1票，1小时后您还可以继续投票</div>
+                    <div class="qrcode">
+                        <img src="img/userCenter/qrcode.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/Zepto.min.js"></script>
+<script>
+    document.addEventListener('touchstart',function () {});
+    (function (desW) {
+        var winW = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = winW/desW * 100 + 'px';
+    })(750);
+    $('#voteBtn').click(function () {
+        $('#question').css('display','block');
+    });
+    $('.close-btn').click(function () {
+        $(this).parent().css('display','none');
+    })
+</script>
+</body>
+</html>

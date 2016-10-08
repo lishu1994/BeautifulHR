@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HR我最美~</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="content">
+    <div class="wrapper">
+        <form action="">
+            <div class="item item-name">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" maxlength="10">
+                <span class="nicky">(OR花名)</span>
+            </div>
+            <div class="item item-declaration">
+                <label for="declaration">宣言:</label>
+                <textarea id="declaration" aria-multiline="true" maxlength="25" placeholder="(25字范围内)"></textarea>
+                <span class="count">(0/25)</span>
+                <span></span>
+            </div>
+            <div class="item item-tel">
+                <label for="tel">电话:</label>
+                <input type="tel" id="tel" maxlength="11">
+            </div>
+            <div class="item item-email">
+                <label for="email">邮箱:</label>
+                <input type="email" id="email" maxlength="50">
+            </div>
+            <div class="item item-company">
+                <label for="company">任职公司:</label>
+                <input type="text" id="company" maxlength="25">
+            </div>
+            <div class="item item-city">
+                <label for="city">所在城市:</label>
+                <input type="text" id="city" maxlength="10">
+            </div>
+            <div class="tips">
+                <p>(涉及到任职公司等敏感信息我们将严格保密，请放心填写)</p>
+            </div>
+            <div class="pic-area">
+                <div class="pic pic-1">
+                    <div class="blk"></div>
+                    <p>+上传</p>
+                </div>
+                <div class="pic pic-2">
+                    <div class="blk"></div>
+                    <p>+拍照</p>
+                </div>
+            </div>
+            <div class="prompt">
+                <p>*请上传JPG格式2MB以下的照片</p>
+                <p>*工牌/名片上的名字需与姓名（花名）栏显示一致</p>
+            </div>
+            <div class="btn">
+                <input type="submit" value="" id="btn">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="Zepto.min.js"></script>
+<script>
+    (function (desW) {
+        var winW = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = winW/desW * 100 + 'px';
+    })(750);
+    $('#declaration').on({
+        'input propertychange':function () {
+        var n = $(this).val().length;
+        $('.count').html('('+ ( n ) +'/25)');
+        },
+        'blur':function () {
+            if($(this).val().length>25|| !$(this).val().length){
+                $('.wrapper').append('<div class="warn">请输入宣言</div>')
+            }else{
+                $('.warn').remove();
+            }
+        }
+    });
+    $('#btn').click(function () {
+        $(this).css({'background':'url("img/btn-2.png")no-repeat','background-size':'100%'})
+    });
+    $('#name').on('blur',function () {
+        if($(this).val().length>10|| !$(this).val().length){
+            $('.wrapper').append('<div class="warn">请输入姓名</div>')
+        }else{
+            $('.warn').remove();
+        }
+    });
+    $('#tel').on('blur',function () {
+        if($(this).val().length>11|| !$(this).val().length){
+            $('.wrapper').append('<div class="warn">请输入电话</div>')
+        }else{
+            $('.warn').remove();
+        }
+    });
+    $('#email').on('blur',function () {
+        var reg = /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/;
+        if(!reg.test($(this).val())|| !$(this).val().length){
+            $('.wrapper').append('<div class="warn">请输入正确的邮箱</div>')
+        }else{
+            $('.warn').remove();
+        }
+    });
+    $('#company').on('blur',function () {
+        if($(this).val().length>200|| !$(this).val().length){
+            $('.wrapper').append('<div class="warn">请输入真实公司名</div>')
+        }else{
+            $('.warn').remove();
+        }
+    });
+    if(nameFlag && declarationFlag && telFlag && emailFlag && companyFlag){
+        $("#submit_btn").css("-webkit-appearance","none");
+    }
+</script>
+</body>
+</html>

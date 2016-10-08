@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a,a:active,a:visited,a:hover{
+    text-decoration: none;
+}
+img{
+    display: block;
+    border: none;
+}
+
+.content{
+    background: #207cbf;
+}
+.wrapper{
+    padding-top: .3rem;
+    background: url("../img/index/bg.png")no-repeat;
+    background-size: 100%;
+    width: 7.5rem;
+    height: 11.76rem;
+}
+.rulesBtn{
+    display: block;
+    margin: 0 0 0 4.24rem;
+    width: 2.96rem;
+    height: .84rem;
+    background: url("../img/index/buttons.png")no-repeat;
+    background-size: 100%;
+}
+.rulesBtn:active{
+    background-position-y: -1.04rem;
+}
+.diamond{
+    margin: .24rem auto .18rem;
+    height: 4.35rem;
+    width: 5.81rem;
+    background: url("../img/index/diamond.png") no-repeat;
+    background-size: 100%;
+    /*-webkit-animation:diamondMove 1s 1s infinite;*/
+    /*animation:diamondMove 1s 1s infinite;*/
+    /*-webkit-animation-timing-function:step-start;!* 马上跳到动画每一结束桢的状态 *!*/
+    /*animation-timing-function:step-start;*/
+}
+.shoe{
+    position: absolute;
+    top:4.4rem;
+    right: 0;
+    width: .87rem;
+    height: .87rem;
+    background: url("../img/index/shoe.png") no-repeat;
+    background-size: 100%;
+    -webkit-animation: shoeRotate .7s 0s 2,shoeMove 1s 0s both linear;
+    animation:shoeRotate .7s 0s 2,shoeMove 1s 0s both linear;
+
+}
+@-webkit-keyframes shoeMove {
+    from{
+        right: 0;
+    }
+    to{
+        right: .9rem;
+    }
+}
+@keyframes shoeMove {
+    from{
+        right: 0;
+    }
+    to{
+        right: .9rem;
+    }
+}
+@-webkit-keyframes shoeRotate {
+    0%,100%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50%{
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+}
+@keyframes shoeRotate {
+    0%,100%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50%{
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+}
+.banner{
+    margin: 0 auto .23rem;
+    padding: .3rem;
+    width: 6.3rem;
+    background: rgba(255,255,255,.4);
+    border-radius: .1rem;
+}
+.inner{
+    padding: .3rem .12rem .15rem;
+    width: 6.06rem;
+    background: #fff5d8;
+    border-radius: .1rem;
+}
+.inner p{
+    display: block;
+    width: 100%;
+    height: .46rem;
+    line-height: .46rem;
+    font-weight: 900;
+    color: #eb3f49;
+    text-align: center;
+    font-size: .26rem;
+}
+.inner img{
+    margin-top: .15rem;
+    width: 100%;
+}
+.btns{
+    margin: 0 auto;
+    width: 6.9rem;
+    overflow: hidden;
+}
+.btns a{
+    display: block;
+    float: left;
+    width: 2.96rem;
+    height: .84rem;
+    background: url("../img/index/buttons.png")no-repeat;
+    background-size: 100%;
+}
+.btns a.rank{
+    margin-right: .49rem;
+    background-position-y:-2.08rem;
+}
+.btns a.rank:active{
+    background-position-y:-3.12rem;
+}
+.btns a.vote{
+    margin-left: .49rem;
+    background-position-y: -4.16rem;
+}
+.btns a.vote:active{
+    background-position-y:-5.2rem;
+}
+.game-rule{
+    display: none;
+    position: absolute;
+    top:0;
+    padding: 4.5rem 0 0;
+    width: 7.5rem;
+    height: 7.56rem;
+    background: url("../img/index/rule.png")no-repeat;
+    background-size: 100%;
+    z-index: 999;
+}
+.game-rule .closeBtn{
+    position: absolute;
+    top:.3rem;
+    right: .3rem;
+    width: .87rem;
+    height: .87rem;
+    background: url("../img/index/button-close.png")no-repeat;
+    background-size: 100%;
+}
+.game-rule .rule-wrapper{
+    margin: 0 auto;
+    padding: .3rem 0;
+    width: 6.89rem;
+    border-radius: .1rem;
+    background: rgba(255,255,255,.4);
+}
+.game-rule .rule-wrapper .rule-content{
+    margin: 0 auto;
+    padding: .3rem;
+    width: 5.7rem;
+    height: 5.87rem;
+    background: #fff5d8;
+    border-radius: .1rem;
+    overflow: scroll;
+}
+.game-rule .rule-wrapper .rule-content p{
+    padding-bottom: .05rem;
+    line-height: .4rem;
+    font-size: .24rem;
+}
+.title{
+    font-weight: 900;
+}
+
+
+
+
+
+/*animation*/
+@-webkit-keyframes diamondMove {
+
+}
+@keyframes diamondMove {
+    0%{
+        background: url("../img/index/diamond.png") 0 0 no-repeat;
+        background-size: 100%;
+    }
+    50%{
+        background: url("../img/index/diamond.png") 0 -4.64rem no-repeat;
+        background-size: 100%;
+    }
+}
+
+
+

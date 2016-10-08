@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HR我最美</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="content">
+    <div class="wrapper">
+        <a class="rulesBtn"></a>
+        <div class="diamond"></div>
+        <div class="shoe"></div>
+        <div class="banner">
+            <div class="inner">
+                <p>参与投票即有机会赢得iWatch 2</p>
+                <p>更有第七名彩蛋奖，惊现iphone7Plus！</p>
+                <div class="award">
+                    <img src="img/index/award.png">
+                </div>
+            </div>
+        </div>
+        <div class="btns">
+            <a href="rankList.html" class="rank"></a>
+            <a href="userList.html" class="vote"></a>
+        </div>
+    </div>
+</div>
+<div class="game-rule">
+    <div class="closeBtn"></div>
+    <div class="rule-wrapper">
+        <div class="rule-content">
+            <p class="title">一、活动详细规则</p>
+            <p>1、通过回答Java问题为您喜欢的HR投票，答题正确每次投3票，错误每次投1票，关注公众号后投票生效；</p>
+            <p>2、每次只能选择一名HR进行投票；</p>
+            <p>3、活动中，每一小时有一次投票机会；</p>
+            <p>4、活动时间：2016年10月10日12:00 - 2016年10月15日12:00；</p>
+            <p>5、本活动最终解释权归Java我最强公众号所有；</p>
+            <p>6、活动结束的当日（10月17日）“Java我最强”公众号将公布获奖名单。</p>
+            <p class="title">二、投票人如何获奖</p>
+            <p>1、活动中期间，累计投出票数最高者直接获得“Java答题投票王”称号，同时获得新款iWatch2一块。（投票数相同者，投票次数优先者取胜）；</p>
+            <p>2、活动期间，除累计投出票数最高者外，我们将根据投票数量分配中奖概率（即投票越多者中奖率越高），随机抽取1名幸运投票者获得Cherry机械键盘；（中奖概率=投票数量/总票数*100%）；</p>
+            <p>3、如发现有恶意刷票及其他违反活动规则的行为，本平台有权取消其获奖资格。</p>
+            <p class="title">三、最美HR如何获奖</p>
+            <p>活动中将为被投票的HR设置3个奖项</p>
+            <p>1、“最美HR”奖：所获票数排名第一位，将获得iWatch2一块，并获得精选Java工程师简历16份（每周为您推荐4份，持续4周）；</p>
+            <p>2、“最靓HR”奖：所获票数排名第二位，将获得最新款Air Pod一个，并获得精选Java工程师简历12份（每周为您推荐3份，持续4周）；</p>
+            <p>3、“最幸HR”奖：所获票数排名第七位，将获得iphone7 plus 64G手机一台，并获得java工程师简历20份（每周为您推荐5份，持续4周）；</p>
+            <p>4、如票数相同，报名优先者排前。</p>
+        </div>
+    </div>
+</div>
+<script src="js/Zepto.min.js"></script>
+<script>
+    (function (desW) {
+        var winW = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = winW/desW * 100 + 'px';
+    })(750);
+    $('.rulesBtn').click(function () {
+        $('.game-rule').css('display','block')
+    });
+    $('.closeBtn').click(function () {
+        $('.game-rule').css('display','none')
+    })
+</script>
+</body>
+</html>

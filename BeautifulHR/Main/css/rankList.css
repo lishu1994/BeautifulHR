@@ -1,0 +1,179 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a,a:active{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    display: block;
+    border: none;
+}
+.main{
+    background: #207cbf;
+
+}
+.wrapper{
+    padding-top: 2.26rem;
+    width: 7.5rem;
+    height: 9.8rem;
+    background: url("../img/rankList/rank-list-bg.png")no-repeat;
+    background-size: 100%;
+}
+.container{
+    margin: 0 auto;
+    padding: .3rem;
+    width: 6.3rem;
+    background: rgba(255,255,255,0.4);
+    border-radius: .1rem;
+}
+.content{
+    padding: .13rem .21rem .13rem .21rem;
+    height: 7.16rem;
+    background: #fff8e3;
+    border-radius: .1rem;
+    overflow: scroll;
+}
+.content li{
+    overflow: hidden;
+    width: 100%;
+    border-bottom: .01rem solid #facc31;
+}
+.content li div{
+    float: left;
+    height: 1.42rem;
+}
+.content li:nth-child(1) div{
+    color: red;
+}
+.content li:nth-child(2) div{
+    color: red;
+}
+.content li:nth-child(7) div{
+    color: red;
+}
+.content li:nth-child(1) .portrait:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:0.07rem;
+    left: .3rem;
+    width: .38rem;
+    height: .28rem;
+    background: url("../img/rankList/crown.png")no-repeat;
+    background-size: 100%;
+}
+.content li:nth-child(2) .portrait:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:0.07rem;
+    left: .3rem;
+    width: .38rem;
+    height: .28rem;
+    background: url("../img/rankList/crown.png")no-repeat;
+    background-size: 100%;
+}
+.content li:nth-child(7) .portrait:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:0.07rem;
+    left: .3rem;
+    width: .38rem;
+    height: .28rem;
+    background: url("../img/rankList/crown.png")no-repeat;
+    background-size: 100%;
+}
+
+
+
+.content li .index{
+    width: .41rem;
+    line-height: 1.42rem;
+    font-size: .26rem;
+    color: #e2ae00;
+}
+.content li .portrait{
+    position: relative;
+    padding: .23rem .17rem 0 0;
+    height: 1.19rem;
+    width: .98rem;
+}
+.content li .portrait img{
+    width: .88rem;
+    height: .88rem;
+    border-radius: 50%;
+    border:.05rem solid #f3da88;
+}
+.content li .username{
+    font-size: .3rem;
+    font-weight: 900;
+    width: 2.73rem;
+    line-height: 1.42rem;
+    color: #e2ae00;
+}
+.content li .flower-icon{
+    width: .44rem;
+    background: url("../img/rankList/flower-y.png")no-repeat;
+    background-size: 100%;
+    background-position-y: .47rem;
+}
+.content li:nth-child(1) .flower-icon{
+    background-image: url('../img/rankList/flower-r.png');
+}
+.content li:nth-child(2) .flower-icon{
+    background-image: url('../img/rankList/flower-r.png');
+}
+.content li:nth-child(7) .flower-icon{
+    background-image: url('../img/rankList/flower-r.png');
+}
+
+
+
+.content li .count{
+    padding-left: .1rem;
+    width: 1.05rem;
+    line-height: 1.42rem;
+    font-size: .3rem;
+    font-weight: 900;
+    color: #e2ae00;
+}
+
+.vote-btn{
+    display: block;
+    margin: .3rem auto 0;
+    width: 3.16rem;
+    height: .84rem;
+    background: url("../img/rankList/vote-btn.png")no-repeat;
+    background-size: 100%;
+}
+.vote-btn:active{
+    background-position-y: -1.14rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

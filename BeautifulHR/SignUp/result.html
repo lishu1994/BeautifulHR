@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>报名成功啦</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 7.5rem;
+            height: 12.06rem;
+            background: url("img/success.png")no-repeat;
+            -webkit-background-size:100%;
+            background-size:100%;
+        }
+    </style>
+</head>
+<body>
+<div class="main"></div>
+<script src="Zepto.min.js"></script>
+<script>
+    (function (desW) {
+        var winW = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = winW/desW * 100 + 'px';
+    })(750);
+</script>
+</body>
+</html>

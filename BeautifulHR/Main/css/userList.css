@@ -1,0 +1,80 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    border: none;
+}
+
+.main{
+    background: #ffe050;
+}
+.wrapper{
+    width: 7.5rem;
+    height: 12.06rem;
+    background: url("../img/userList/list-bg.png")no-repeat;
+    background-size: 100%;
+    overflow: scroll;
+}
+.banner{
+    margin: 0 auto;
+    width: 6.7rem;
+    height: 3.05rem;
+    background: url("../img/userList/list-banner.png")no-repeat;
+    background-size: 100%;
+}
+.userList ul{
+    padding: .15rem .4rem 0;
+}
+.userList li{
+    margin-bottom: .2rem;
+    padding: .17rem;
+    background: #189aea;
+    border-radius: .1rem;
+    overflow: hidden;
+}
+.userList li img{
+    float: left;
+    width: 2.5rem;
+}
+.userList li .item{
+    float: left;
+    padding-left: .23rem;
+    width:3.57rem;
+}
+.username{
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .4rem;
+}
+.declaration{
+    padding-bottom: .16rem;
+    height: .83rem;
+    line-height: .42rem;
+    font-size: .25rem;
+}
+.vote-btn{
+    padding: .2rem 0 0 2.53rem;
+    width: .96rem;
+    height: .51rem;
+    background: url("../img/userList/list-btn.png");
+    background-size: 100%;
+    font-size: .3rem;
+    color: #ea5454;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
